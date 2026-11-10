@@ -233,12 +233,23 @@
                 id="company-video"
                 class="w-full h-full object-cover"
                 controls
-                preload="metadata"
+                autoplay
+                playsinline
+                preload="auto"
                 poster="assets/logo.png"
               >
                 <source src="assets/smc_video.mp4" type="video/mp4" />
                 เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
               </video>
+              <button
+                type="button"
+                id="unmute-overlay-btn"
+                onclick="enableVideoSound()"
+                class="hidden absolute top-3 right-3 z-10 px-3.5 py-2 rounded-xl gold-gradient-bg text-navy-950 font-bold text-xs shadow-lg flex items-center gap-1.5 hover:brightness-105 transition animate-bounce"
+              >
+                <i data-lucide="volume-2" class="w-4 h-4"></i>
+                <span>คลิกเพื่อเปิดเสียง</span>
+              </button>
             </div>
 
             <!-- Bottom Quick Trust Points -->
@@ -1318,6 +1329,51 @@
       feedback.classList.remove('hidden');
 
       window.location.href = `mailto:smartmc2009@gmail.com?subject=${subject}&body=${body}`;
+    }
+
+    // Smart Autoplay on Page Load
+    const companyVideo = document.getElementById('company-video');
+    const unmuteOverlayBtn = document.getElementById('unmute-overlay-btn');
+
+    function enableVideoSound() {
+      if (!companyVideo) return;
+      companyVideo.muted = false;
+      companyVideo.play().catch(() => {});
+      if (unmuteOverlayBtn) unmuteOverlayBtn.classList.add('hidden');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      if (!companyVideo) return;
+      // 1. Try playing with sound immediately
+      companyVideo.muted = false;
+      const playPromise = companyVideo.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // 2. If browser blocks unmuted autoplay, fallback to muted autoplay immediately
+          companyVideo.muted = true;
+          companyVideo.play().catch(() => {});
+          if (unmuteOverlayBtn) unmuteOverlayBtn.classList.remove('hidden');
+
+          // Automatically unmute on the user's first click/touch/key anywhere on the page
+          const unlockAudio = () => {
+            enableVideoSound();
+            document.removeEventListener('click', unlockAudio);
+            document.removeEventListener('touchstart', unlockAudio);
+            document.removeEventListener('keydown', unlockAudio);
+          };
+          document.addEventListener('click', unlockAudio, { once: true });
+          document.addEventListener('touchstart', unlockAudio, { once: true });
+          document.addEventListener('keydown', unlockAudio, { once: true });
+        });
+      }
+    });
+
+    if (companyVideo) {
+      companyVideo.addEventListener('volumechange', () => {
+        if (!companyVideo.muted && unmuteOverlayBtn) {
+          unmuteOverlayBtn.classList.add('hidden');
+        }
+      });
     }
   </script>
 </body>
