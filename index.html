@@ -82,6 +82,52 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-gold-500 selection:text-navy-950">
 
+  <!-- Luxury Welcome Overlay (Unlocks Full Audio + Video Autoplay from 0:00) -->
+  <div
+    id="welcome-overlay"
+    onclick="enterSiteWithSound()"
+    class="fixed inset-0 z-[100] navy-gradient-bg/95 backdrop-blur-md flex items-center justify-center p-4 transition-opacity duration-500 cursor-pointer"
+    style="background: radial-gradient(circle at center, rgba(22, 56, 104, 0.96) 0%, rgba(6, 19, 38, 0.98) 100%);"
+  >
+    <div
+      onclick="event.stopPropagation(); enterSiteWithSound();"
+      class="max-w-lg w-full bg-white/10 border-2 border-gold-400/50 rounded-3xl p-8 sm:p-10 text-center text-white shadow-2xl relative overflow-hidden"
+    >
+      <div class="w-24 h-24 mx-auto mb-5 rounded-full bg-white p-1.5 shadow-lg shadow-gold-500/20">
+        <img src="assets/logo.png" alt="SMART Management Logo" class="w-full h-full object-contain rounded-full" />
+      </div>
+
+      <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-gold-500/20 border border-gold-400/40 text-gold-300 text-xs font-medium mb-3">
+        <span>มุ่งมั่น สร้างสรรค์ สังคมน่าอยู่</span>
+      </div>
+
+      <h2 class="text-xl sm:text-2xl font-bold tracking-tight text-white">
+        บริษัท สมาร์ท แมเนจเม้นท์ แอนด์ คอนซัลท์ จำกัด
+      </h2>
+      <p class="text-xs sm:text-sm text-gold-300 font-medium tracking-wider uppercase mt-1">
+        SMART MANAGEMENT AND CONSULT CO., LTD.
+      </p>
+
+      <p class="text-xs sm:text-sm text-slate-300 mt-4 leading-relaxed">
+        บริหารจัดการนิติบุคคลหมู่บ้านจัดสรรและอาคารชุดอย่างมืออาชีพ<br />
+        โปร่งใส ตรวจสอบได้ ด้วยมาตรฐานและเทคโนโลยีทันสมัย
+      </p>
+
+      <button
+        type="button"
+        onclick="event.stopPropagation(); enterSiteWithSound();"
+        class="mt-7 w-full py-4 px-6 rounded-xl gold-gradient-bg text-navy-950 font-bold text-sm sm:text-base shadow-lg shadow-gold-500/25 hover:brightness-105 transition flex items-center justify-center gap-2.5"
+      >
+        <i data-lucide="volume-2" class="w-5 h-5"></i>
+        <span>เข้าสู่เว็บไซต์และรับชมวีดิทัศน์</span>
+      </button>
+
+      <p class="text-[11px] text-slate-400 mt-3">
+        คลิกปุ่มด้านบนหรือแตะหน้าจอเพื่อเข้าสู่เว็บไซต์พร้อมเสียงบรรยาย
+      </p>
+    </div>
+  </div>
+
   <!-- Top Information Bar -->
   <div class="bg-navy-950 text-slate-300 text-xs py-2.5 border-b border-navy-800 hidden md:block">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
@@ -1331,40 +1377,54 @@
       window.location.href = `mailto:smartmc2009@gmail.com?subject=${subject}&body=${body}`;
     }
 
-    // Smart Autoplay on Page Load
+    // Smart Autoplay & Welcome Overlay Handler
     const companyVideo = document.getElementById('company-video');
     const unmuteOverlayBtn = document.getElementById('unmute-overlay-btn');
+    const welcomeOverlay = document.getElementById('welcome-overlay');
+
+    function hideWelcomeOverlay() {
+      if (!welcomeOverlay) return;
+      welcomeOverlay.classList.add('opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        welcomeOverlay.classList.add('hidden');
+      }, 450);
+    }
+
+    function enterSiteWithSound() {
+      hideWelcomeOverlay();
+      if (!companyVideo) return;
+      companyVideo.muted = false;
+      companyVideo.volume = 1.0;
+      companyVideo.currentTime = 0;
+      companyVideo.play().catch(() => {});
+      if (unmuteOverlayBtn) unmuteOverlayBtn.classList.add('hidden');
+    }
 
     function enableVideoSound() {
       if (!companyVideo) return;
       companyVideo.muted = false;
+      companyVideo.volume = 1.0;
       companyVideo.play().catch(() => {});
       if (unmuteOverlayBtn) unmuteOverlayBtn.classList.add('hidden');
     }
 
     window.addEventListener('DOMContentLoaded', () => {
       if (!companyVideo) return;
-      // 1. Try playing with sound immediately
+      // Try unmuted autoplay first (succeeds if browser/site setting already allows sound)
       companyVideo.muted = false;
+      companyVideo.volume = 1.0;
       const playPromise = companyVideo.play();
       if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          // 2. If browser blocks unmuted autoplay, fallback to muted autoplay immediately
-          companyVideo.muted = true;
-          companyVideo.play().catch(() => {});
-          if (unmuteOverlayBtn) unmuteOverlayBtn.classList.remove('hidden');
-
-          // Automatically unmute on the user's first click/touch/key anywhere on the page
-          const unlockAudio = () => {
-            enableVideoSound();
-            document.removeEventListener('click', unlockAudio);
-            document.removeEventListener('touchstart', unlockAudio);
-            document.removeEventListener('keydown', unlockAudio);
-          };
-          document.addEventListener('click', unlockAudio, { once: true });
-          document.addEventListener('touchstart', unlockAudio, { once: true });
-          document.addEventListener('keydown', unlockAudio, { once: true });
-        });
+        playPromise
+          .then(() => {
+            // Browser allowed unmuted autoplay right away -> hide welcome overlay automatically
+            hideWelcomeOverlay();
+          })
+          .catch(() => {
+            // Browser requires 1 user interaction before playing sound -> keep video paused at 0:00 and let Welcome Overlay unlock it
+            companyVideo.pause();
+            companyVideo.currentTime = 0;
+          });
       }
     });
 
