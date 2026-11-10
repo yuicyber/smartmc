@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>บริษัท สมาร์ท แมเนจเม้นท์ แอนด์ คอนซัลท์ จำกัด | SMART Management and Consult Co., Ltd.</title>
+  <meta name="description" content="บริหารจัดการนิติบุคคลหมู่บ้านจัดสรรและอาคารชุดอย่างมืออาชีพ โปร่งใส ตรวจสอบได้ ด้วยระบบมาตรฐานและเทคโนโลยีทันสมัย มุ่งมั่น สร้างสรรค์ สังคมน่าอยู่" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <!-- Google Fonts: Prompt & Sarabun -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Prompt', 'Sarabun', 'sans-serif'],
+            body: ['Sarabun', 'Prompt', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              50: '#f0f4f9',
+              100: '#d9e2f0',
+              200: '#b3c6e1',
+              600: '#163868',
+              700: '#0f294d',
+              800: '#0a1e3c',
+              900: '#061326',
+              950: '#030b17',
+            },
+            gold: {
+              100: '#fbf3db',
+              200: '#f5e2ad',
+              300: '#eed07e',
+              400: '#e4bc53',
+              500: '#d4a534',
+              600: '#b58722',
+              700: '#8f6619',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Prompt', 'Sarabun', sans-serif;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #f5e2ad 0%, #d4a534 50%, #eed07e 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-gradient-bg {
+      background: linear-gradient(135deg, #e4bc53 0%, #c49327 50%, #dfB447 100%);
+    }
+    .navy-gradient-bg {
+      background: radial-gradient(circle at top right, #163868 0%, #0a1e3c 55%, #061326 100%);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px -10px rgba(10, 30, 60, 0.14);
+    }
+    .gold-border-glow:hover {
+      border-color: #d4a534;
+      box-shadow: 0 10px 30px -5px rgba(212, 165, 52, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-gold-500 selection:text-navy-950">
+
+  <!-- Top Information Bar -->
+  <div class="bg-navy-950 text-slate-300 text-xs py-2.5 border-b border-navy-800 hidden md:block">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <span class="flex items-center gap-1.5">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-gold-400"></i>
+          เลขทะเบียนนิติบุคคล: <strong class="text-white">0105552126717</strong> (ก่อตั้งเมื่อ 20 พ.ย. 2552)
+        </span>
+        <span class="flex items-center gap-1.5">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold-400"></i>
+          4 ซอยอ่อนนุช 73 แขวงประเวศ เขตประเวศ กรุงเทพมหานคร 10250
+        </span>
+      </div>
+      <div class="flex items-center space-x-5">
+        <a href="mailto:smartmc2009@gmail.com" class="hover:text-gold-400 transition flex items-center gap-1.5">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-gold-400"></i>
+          smartmc2009@gmail.com
+        </a>
+        <span class="text-navy-700">|</span>
+        <span class="text-gold-300 font-medium">“มุ่งมั่น สร้างสรรค์ สังคมน่าอยู่”</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header id="navbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Brand Logo -->
+        <a href="#home" class="flex items-center gap-3.5 group">
+          <img src="assets/logo.png" alt="SMART Management and Consult Logo" class="h-14 w-14 object-contain rounded-full shadow-sm group-hover:scale-105 transition" />
+          <div>
+            <div class="text-base sm:text-lg font-bold text-navy-900 tracking-tight leading-snug">
+              สมาร์ท แมเนจเม้นท์ แอนด์ คอนซัลท์
+            </div>
+            <div class="text-[11px] sm:text-xs font-medium text-gold-600 tracking-wider uppercase">
+              SMART Management and Consult Co., Ltd.
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden lg:flex items-center space-x-1 xl:space-x-2 text-sm font-medium text-slate-700">
+          <a href="#about" class="px-3 py-2 rounded-lg hover:text-navy-900 hover:bg-slate-100 transition">เกี่ยวกับเรา</a>
+          <a href="#services" class="px-3 py-2 rounded-lg hover:text-navy-900 hover:bg-slate-100 transition">บริการครบวงจร</a>
+          <a href="#systems" class="px-3 py-2 rounded-lg hover:text-navy-900 hover:bg-slate-100 transition">ระบบบริหารงาน</a>
+          <a href="#technology" class="px-3 py-2 rounded-lg hover:text-navy-900 hover:bg-slate-100 transition">เทคโนโลยี & AI</a>
+          <a href="#roadmap" class="px-3 py-2 rounded-lg hover:text-navy-900 hover:bg-slate-100 transition">การเริ่มงาน</a>
+          <a href="#portfolio" class="px-3 py-2 rounded-lg hover:text-navy-900 hover:bg-slate-100 transition">ผลงานของเรา</a>
+          <a href="#contact" class="ml-2 px-5 py-2.5 rounded-xl gold-gradient-bg text-navy-950 font-semibold shadow-md hover:brightness-105 transition flex items-center gap-1.5">
+            <i data-lucide="file-check-2" class="w-4 h-4"></i>
+            ขอใบเสนอราคา
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl text-navy-900 hover:bg-slate-100 focus:outline-none" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-100 px-4 pt-3 pb-6 space-y-2 shadow-xl">
+      <a href="#about" class="mobile-link block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-100 font-medium">เกี่ยวกับเรา</a>
+      <a href="#services" class="mobile-link block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-100 font-medium">บริการครบวงจร</a>
+      <a href="#systems" class="mobile-link block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-100 font-medium">ระบบบริหารงาน</a>
+      <a href="#technology" class="mobile-link block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-100 font-medium">เทคโนโลยี & AI</a>
+      <a href="#roadmap" class="mobile-link block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-100 font-medium">แผนเริ่มต้นบริหารโครงการ</a>
+      <a href="#portfolio" class="mobile-link block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-100 font-medium">ผลงานบริหาร</a>
+      <a href="#contact" class="mobile-link block text-center mt-3 px-5 py-3 rounded-xl gold-gradient-bg text-navy-950 font-bold shadow">
+        ขอใบเสนอราคา / ติดต่อเรา
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative navy-gradient-bg text-white overflow-hidden py-16 md:py-24 lg:py-28">
+    <!-- Subtle Background Pattern -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#d4a534 1px, transparent 1px); background-size: 32px 32px;"></div>
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Hero Left Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-gold-400/30 text-gold-300 text-xs sm:text-sm font-medium backdrop-blur-sm">
+            <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+            Professional Property & Juristic Person Management
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-bold leading-tight tracking-tight">
+            บริหารจัดการ<span class="gold-gradient-text">นิติบุคคลหมู่บ้านจัดสรร</span>และ<span class="gold-gradient-text">อาคารชุด</span>อย่างมืออาชีพ
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-light">
+            บริษัท สมาร์ท แมเนจเม้นท์ แอนด์ คอนซัลท์ จำกัด ยกระดับการดูแลทรัพย์สินส่วนกลาง งานบริการลูกบ้าน งานบัญชีการเงิน และงานวิศวกรรมอาคาร ด้วยระบบที่โปร่งใส ตรวจสอบได้ พร้อมผสานเทคโนโลยีและ AI เพื่อคุณภาพชีวิตที่ดีของผู้อยู่อาศัย
+          </p>
+
+          <!-- Key Highlights Badges -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+            <div class="bg-white/5 border border-white/10 rounded-xl p-3.5 backdrop-blur-sm">
+              <div class="text-gold-400 font-bold text-xl sm:text-2xl">พ.ศ. 2552</div>
+              <div class="text-xs text-slate-300 mt-0.5">จดทะเบียนนิติบุคคลมั่นคง</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-3.5 backdrop-blur-sm">
+              <div class="text-gold-400 font-bold text-xl sm:text-2xl">100%</div>
+              <div class="text-xs text-slate-300 mt-0.5">โปร่งใส ตรวจสอบย้อนหลังได้</div>
+            </div>
+            <div class="col-span-2 sm:col-span-1 bg-white/5 border border-white/10 rounded-xl p-3.5 backdrop-blur-sm">
+              <div class="text-gold-400 font-bold text-xl sm:text-2xl">SMART</div>
+              <div class="text-xs text-slate-300 mt-0.5">ผสานระบบดิจิทัล & AI</div>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="#contact" class="px-7 py-4 rounded-xl gold-gradient-bg text-navy-950 font-bold shadow-lg shadow-gold-500/20 hover:brightness-105 transition flex items-center gap-2">
+              <span>นัดหมายนำเสนอโครงการ</span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+            <a href="#services" class="px-6 py-4 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-medium transition flex items-center gap-2">
+              <i data-lucide="layers" class="w-5 h-5 text-gold-400"></i>
+              <span>ดูขอบเขตบริการครบวงจร</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Card / Video Showcase -->
+        <div class="lg:col-span-5">
+          <div class="bg-white/10 backdrop-blur-md border border-gold-400/30 rounded-3xl p-4 sm:p-6 shadow-2xl">
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <img src="assets/logo.png" alt="SMC Logo" class="w-10 h-10 rounded-full bg-white p-0.5" />
+                <div>
+                  <div class="text-sm font-semibold text-white">วีดิทัศน์แนะนำองค์กร (Company Profile)</div>
+                  <div class="text-xs text-gold-300">“มุ่งมั่น สร้างสรรค์ สังคมน่าอยู่”</div>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-md bg-gold-500/20 text-gold-300 text-xs font-medium border border-gold-400/30">
+                HD Video
+              </span>
+            </div>
+
+            <!-- Video Player -->
+            <div class="relative rounded-2xl overflow-hidden bg-navy-950 border border-white/15 shadow-inner aspect-video">
+              <video
+                id="company-video"
+                class="w-full h-full object-cover"
+                controls
+                preload="metadata"
+                poster="assets/logo.png"
+              >
+                <source src="assets/smc_video.mp4" type="video/mp4" />
+                เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+              </video>
+            </div>
+
+            <!-- Bottom Quick Trust Points -->
+            <div class="mt-4 grid grid-cols-2 gap-3 text-xs text-slate-200">
+              <div class="flex items-center gap-2 bg-navy-900/70 px-3 py-2.5 rounded-xl border border-white/10">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400 shrink-0"></i>
+                <span>ระบบงานหน้าบ้าน & หลังบ้านครบวงจร</span>
+              </div>
+              <div class="flex items-center gap-2 bg-navy-900/70 px-3 py-2.5 rounded-xl border border-white/10">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400 shrink-0"></i>
+                <span>การควบคุมภายในทางบัญชีรัดกุม</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us, Vision, Mission & SMART Core Values -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-navy-50 text-navy-700 font-semibold text-xs uppercase tracking-wider mb-3 border border-navy-100">
+          01 - 02 • ภาพรวมบริษัท วิสัยทัศน์ และค่านิยมองค์กร
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-navy-900">
+          บริหารจัดการอย่างเป็นระบบ โปร่งใส ตรวจสอบได้
+        </h2>
+        <p class="mt-4 text-slate-600 leading-relaxed">
+          <strong>บริษัท สมาร์ท แมเนจเม้นท์ แอนด์ คอนซัลท์ จำกัด</strong> ดำเนินธุรกิจภายใต้แนวคิดการบริหารจัดการอย่างเป็นระบบ มุ่งเน้นการดูแลนิติบุคคลหมู่บ้านจัดสรรและอาคารชุด ครอบคลุมงานบริหารสำนักงานนิติบุคคล งานบริการสมาชิก งานบัญชีและการเงิน งานอาคารสถานที่ งานรักษาความปลอดภัย งานความสะอาด และการประสานงานผู้รับเหมา
+        </p>
+      </div>
+
+      <!-- Vision, Mission & Official Registration Info -->
+      <div class="grid lg:grid-cols-12 gap-8 items-stretch mb-16">
+        <!-- Vision & Mission -->
+        <div class="lg:col-span-7 flex flex-col justify-between space-y-6">
+          <!-- Vision Card -->
+          <div class="bg-gradient-to-br from-navy-900 to-navy-800 text-white rounded-2xl p-7 shadow-lg border border-navy-700 relative overflow-hidden">
+            <div class="flex items-start gap-4">
+              <div class="p-3 rounded-xl bg-gold-500/20 border border-gold-400/40 text-gold-300 shrink-0">
+                <i data-lucide="eye" class="w-7 h-7"></i>
+              </div>
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-wider text-gold-400">วิสัยทัศน์ (Vision)</div>
+                <h3 class="text-xl font-bold mt-1 mb-2">ความไว้วางใจและคุณภาพชีวิตของผู้อยู่อาศัย</h3>
+                <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
+                  “เป็นบริษัทบริหารจัดการนิติบุคคลหมู่บ้านจัดสรรและอาคารชุดที่ได้รับความไว้วางใจ ด้วยมาตรฐานการทำงานที่เป็นมืออาชีพ โปร่งใส ตรวจสอบได้ และให้ความสำคัญกับคุณภาพชีวิตของผู้อยู่อาศัย”
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mission List -->
+          <div class="bg-slate-50 rounded-2xl p-7 border border-slate-200/80 flex-1">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="p-2.5 rounded-xl bg-navy-900 text-gold-400">
+                <i data-lucide="target" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <div class="text-xs font-semibold uppercase tracking-wider text-navy-600">พันธกิจ (Mission)</div>
+                <h3 class="text-lg font-bold text-navy-900">ภารกิจหลัก 5 ประการของเรา</h3>
+              </div>
+            </div>
+            <ul class="space-y-3.5 text-sm sm:text-base text-slate-700">
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-gold-600 shrink-0 mt-0.5"></i>
+                <span>บริหารทรัพย์สินส่วนกลางให้มีความพร้อมใช้งาน ปลอดภัย และได้รับการบำรุงรักษาอย่างเหมาะสม</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-gold-600 shrink-0 mt-0.5"></i>
+                <span>ดูแลสมาชิกและผู้อยู่อาศัยด้วยความสุภาพ รวดเร็ว เป็นธรรม และมี Service Mind</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-gold-600 shrink-0 mt-0.5"></i>
+                <span>สนับสนุนคณะกรรมการนิติบุคคลด้วยข้อมูลที่ถูกต้อง รายงานที่ชัดเจน และข้อเสนอแนะที่นำไปใช้ได้จริง</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-gold-600 shrink-0 mt-0.5"></i>
+                <span>ควบคุมงบประมาณ บัญชี และการจัดเก็บรายได้ด้วยหลักธรรมาภิบาล</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-gold-600 shrink-0 mt-0.5"></i>
+                <span>พัฒนาบุคลากรและนำเทคโนโลยีมาเพิ่มประสิทธิภาพการทำงานอย่างต่อเนื่อง</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Corporate Legal Credential Card -->
+        <div class="lg:col-span-5">
+          <div class="h-full bg-white rounded-2xl p-7 border-2 border-gold-400/50 shadow-xl flex flex-col justify-between relative">
+            <div>
+              <div class="flex items-center justify-between border-b border-slate-100 pb-5 mb-6">
+                <div class="flex items-center gap-3.5">
+                  <img src="assets/logo.png" alt="Logo" class="w-14 h-14 object-contain" />
+                  <div>
+                    <span class="text-xs font-semibold text-gold-600 uppercase tracking-wider">ข้อมูลนิติบุคคลตามหนังสือรับรอง</span>
+                    <h3 class="text-lg font-bold text-navy-900">ข้อมูลจดทะเบียนบริษัท</h3>
+                  </div>
+                </div>
+              </div>
+
+              <dl class="space-y-4 text-sm">
+                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                  <dt class="text-xs text-slate-500">ชื่อบริษัท (ภาษาไทย / อังกฤษ)</dt>
+                  <dd class="font-bold text-navy-900 mt-0.5">บริษัท สมาร์ท แมเนจเม้นท์ แอนด์ คอนซัลท์ จำกัด</dd>
+                  <dd class="text-xs text-slate-600 font-medium">SMART MANAGEMENT AND CONSULT COMPANY LIMITED</dd>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                    <dt class="text-xs text-slate-500">เลขทะเบียนนิติบุคคล</dt>
+                    <dd class="font-bold text-navy-900 mt-0.5">0105552126717</dd>
+                  </div>
+                  <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                    <dt class="text-xs text-slate-500">ทุนจดทะเบียน</dt>
+                    <dd class="font-bold text-navy-900 mt-0.5">1,000,000 บาท</dd>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                    <dt class="text-xs text-slate-500">วันที่จดทะเบียนจัดตั้ง</dt>
+                    <dd class="font-semibold text-navy-900 mt-0.5">20 พฤศจิกายน 2552</dd>
+                  </div>
+                  <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                    <dt class="text-xs text-slate-500">กรรมการผู้มีอำนาจ</dt>
+                    <dd class="font-semibold text-navy-900 mt-0.5">นายณัฐกร กิตติสุขมงคล</dd>
+                  </div>
+                </div>
+
+                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                  <dt class="text-xs text-slate-500">สำนักงานแห่งใหญ่</dt>
+                  <dd class="font-semibold text-navy-900 mt-0.5">
+                    4 ซอยอ่อนนุช 73 แขวงประเวศ เขตประเวศ กรุงเทพมหานคร 10250
+                  </dd>
+                  <dd class="text-xs text-slate-500 mt-0.5">
+                    4 On Nut 73 Alley, Prawet Subdistrict, Prawet District, Bangkok 10250
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <span>อ้างอิงหนังสือรับรองกรมพัฒนาธุรกิจการค้า</span>
+              <span class="inline-flex items-center gap-1 text-emerald-700 font-semibold">
+                <i data-lucide="badge-check" class="w-4 h-4"></i> นิติบุคคลถูกต้องตามกฎหมาย
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- S-M-A-R-T Core Values -->
+      <div>
+        <div class="text-center mb-8">
+          <h3 class="text-2xl font-bold text-navy-900">ค่านิยมองค์กร “S • M • A • R • T” (Core Values)</h3>
+          <p class="text-sm text-slate-600 mt-1">หัวใจสำคัญในการปฏิบัติงานของบุคลากรทุกคนในองค์กร</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+          <!-- S -->
+          <div class="bg-slate-50 hover:bg-white rounded-2xl p-6 border border-slate-200 gold-border-glow card-hover text-center">
+            <div class="w-14 h-14 mx-auto rounded-2xl navy-gradient-bg text-gold-400 font-bold text-2xl flex items-center justify-center shadow-md mb-4">
+              S
+            </div>
+            <h4 class="font-bold text-navy-900 text-base">Service Mind</h4>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">ใส่ใจและเต็มใจให้บริการดูแลสมาชิกด้วยความสุภาพและรวดเร็ว</p>
+          </div>
+          <!-- M -->
+          <div class="bg-slate-50 hover:bg-white rounded-2xl p-6 border border-slate-200 gold-border-glow card-hover text-center">
+            <div class="w-14 h-14 mx-auto rounded-2xl navy-gradient-bg text-gold-400 font-bold text-2xl flex items-center justify-center shadow-md mb-4">
+              M
+            </div>
+            <h4 class="font-bold text-navy-900 text-base">Management Excellence</h4>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">บริหารงานด้วยมาตรฐานวิชาชีพ มีระบบระเบียบ และความรับผิดชอบ</p>
+          </div>
+          <!-- A -->
+          <div class="bg-slate-50 hover:bg-white rounded-2xl p-6 border border-slate-200 gold-border-glow card-hover text-center">
+            <div class="w-14 h-14 mx-auto rounded-2xl navy-gradient-bg text-gold-400 font-bold text-2xl flex items-center justify-center shadow-md mb-4">
+              A
+            </div>
+            <h4 class="font-bold text-navy-900 text-base">Accountability</h4>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">โปร่งใส รับผิดชอบในหน้าที่ และสามารถตรวจสอบย้อนกลับได้ทุกขั้นตอน</p>
+          </div>
+          <!-- R -->
+          <div class="bg-slate-50 hover:bg-white rounded-2xl p-6 border border-slate-200 gold-border-glow card-hover text-center">
+            <div class="w-14 h-14 mx-auto rounded-2xl navy-gradient-bg text-gold-400 font-bold text-2xl flex items-center justify-center shadow-md mb-4">
+              R
+            </div>
+            <h4 class="font-bold text-navy-900 text-base">Respect</h4>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">เคารพสิทธิความแตกต่างของลูกบ้าน คณะกรรมการ และผู้เกี่ยวข้องทุกคน</p>
+          </div>
+          <!-- T -->
+          <div class="bg-slate-50 hover:bg-white rounded-2xl p-6 border border-slate-200 gold-border-glow card-hover text-center">
+            <div class="w-14 h-14 mx-auto rounded-2xl navy-gradient-bg text-gold-400 font-bold text-2xl flex items-center justify-center shadow-md mb-4">
+              T
+            </div>
+            <h4 class="font-bold text-navy-900 text-base">Technology</h4>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">ประยุกต์ใช้เทคโนโลยี ข้อมูล และ AI อย่างเหมาะสมเพื่อพัฒนางานบริหาร</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scope of Services (7 Core Services) -->
+  <section id="services" class="py-20 bg-slate-100/80 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-white text-navy-700 font-semibold text-xs uppercase tracking-wider mb-3 border border-slate-200 shadow-sm">
+          03 • ขอบเขตและรูปแบบการให้บริการ
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-navy-900">
+          บริการบริหารจัดการนิติบุคคลแบบครบวงจร
+        </h2>
+        <p class="mt-3 text-slate-600">
+          ออกแบบทีมงาน ขอบเขตหน้าที่ (Scope of Work) และระดับการให้บริการ (SLA) ให้เหมาะสมกับขนาดโครงการ จำนวนยูนิต พื้นที่ส่วนกลาง และงบประมาณของแต่ละนิติบุคคล
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Service 1 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-sm card-hover gold-border-glow">
+          <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-5">
+            <i data-lucide="building-2" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-navy-900 mb-2">1. งานบริหารสำนักงานนิติบุคคล</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            วางแผนการดำเนินงานประจำปี จัดทำแผนงบประมาณ บริหารสำนักงานนิติบุคคล และสนับสนุนการจัดประชุมคณะกรรมการรวมถึงการประชุมใหญ่สามัญ/วิสามัญตามกฎหมาย
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-sm card-hover gold-border-glow">
+          <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-5">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-navy-900 mb-2">2. งานบริการสมาชิกและลูกบ้าน</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            ศูนย์บริการสมาชิกรับเรื่องร้องเรียน แจ้งซ่อม งานทะเบียนสมาชิก/รถยนต์/บัตรผ่าน ให้ข้อมูลระเบียบการอยู่อาศัย และติดตามผลด้วยระบบเลขที่งาน (Ticket)
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-sm card-hover gold-border-glow">
+          <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-5">
+            <i data-lucide="calculator" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-navy-900 mb-2">3. งานบัญชี การเงิน และควบคุมภายใน</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            วางระบบเอกสารรับ–จ่าย จัดทำรายงานการเงินรายเดือน กระทบยอดธนาคาร ติดตามลูกหนี้ค่าส่วนกลาง แยกหน้าที่ผู้อนุมัติชัดเจน ไม่ปะปนกับบัญชีบริษัทบริหาร
+          </p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-sm card-hover gold-border-glow">
+          <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-5">
+            <i data-lucide="wrench" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-navy-900 mb-2">4. งานอาคาร สาธารณูปโภค และวิศวกรรม</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            บริหารงานซ่อมบำรุงเชิงป้องกัน (Preventive Maintenance) ตรวจสอบระบบไฟฟ้า ประปา ปั๊มน้ำ ระบบระบายน้ำ ลิฟต์ ระบบแจ้งเหตุเพลิงไหม้ และพื้นที่เสี่ยงตามรอบมาตรฐาน
+          </p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-sm card-hover gold-border-glow">
+          <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-5">
+            <i data-lucide="shield" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-navy-900 mb-2">5. งานระบบรักษาความปลอดภัย</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            กำหนดจุดตรวจและรอบลาดตระเวน ควบคุมการเข้า–ออกของผู้มาติดต่อและผู้รับเหมา บันทึกเหตุการณ์ผิดปกติ และจัดซักซ้อมแผนฉุกเฉิน/อัคคีภัยอย่างสม่ำเสมอ
+          </p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-sm card-hover gold-border-glow">
+          <div class="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-5">
+            <i data-lucide="trees" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-navy-900 mb-2">6. งานความสะอาดและภูมิทัศน์</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            วางแผนพื้นที่รับผิดชอบ ตารางความถี่ในการทำความสะอาด ल็อบบี้ ทางเดิน ห้องน้ำ ลานจอดรถ จุดพักขยะ รวมถึงการดูแลต้นไม้ สนามหญ้า และภูมิทัศน์ส่วนกลาง
+          </p>
+        </div>
+
+        <!-- Service 7 (Full Width Banner Card) -->
+        <div class="md:col-span-2 lg:col-span-3 bg-gradient-to-r from-navy-900 via-navy-800 to-navy-900 text-white rounded-2xl p-7 shadow-lg flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-gold-500/20 border border-gold-400/40 text-gold-300 flex items-center justify-center shrink-0">
+              <i data-lucide="clipboard-check" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white">7. งานจัดซื้อและบริหารผู้รับเหมา (Procurement & Vendor Management)</h3>
+              <p class="text-sm text-slate-300 mt-1 max-w-3xl">
+                กำหนดขอบเขตงาน (TOR) ขอใบเสนอราคาและเปรียบเทียบราคาอย่างโปร่งใส ตรวจสอบคุณสมบัติผู้ขาย กำกับมาตรฐานความปลอดภัยขณะปฏิบัติงาน ตรวจรับงานอย่างรัดกุม และติดตามการรับประกันผลงาน
+              </p>
+            </div>
+          </div>
+          <a href="#contact" class="shrink-0 px-5 py-3 rounded-xl gold-gradient-bg text-navy-950 font-bold text-sm hover:brightness-105 transition">
+            ปรึกษาขอบเขตงานโครงการ
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Operating Systems Section (Front Office, Back Office, Finance, Team) -->
+  <section id="systems" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-navy-50 text-navy-700 font-semibold text-xs uppercase tracking-wider mb-3 border border-navy-100">
+          04 - 13 • มาตรฐานระบบปฏิบัติงานและโครงสร้างองค์กร
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-navy-900">
+          ระบบการบริหารงานที่รัดกุม ทั้งหน้าบ้านและหลังบ้าน
+        </h2>
+        <p class="mt-3 text-slate-600">
+          เลือกดูรายละเอียดระบบปฏิบัติงานมาตรฐานที่เราใช้ขับเคลื่อนโครงการให้เป็นระเบียบ ตรวจสอบได้ และต่อเนื่อง
+        </p>
+      </div>
+
+      <!-- Interactive Tabs Navigation -->
+      <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10">
+        <button onclick="switchSystemTab('front')" id="tab-btn-front" class="sys-tab-btn px-5 py-3 rounded-xl font-semibold text-sm transition flex items-center gap-2 bg-navy-900 text-gold-400 shadow-md">
+          <i data-lucide="headset" class="w-4 h-4"></i>
+          <span>ระบบงานหน้าบ้าน (Front Office)</span>
+        </button>
+        <button onclick="switchSystemTab('back')" id="tab-btn-back" class="sys-tab-btn px-5 py-3 rounded-xl font-semibold text-sm transition flex items-center gap-2 bg-slate-100 text-slate-700 hover:bg-slate-200">
+          <i data-lucide="folder-kanban" class="w-4 h-4"></i>
+          <span>ระบบงานหลังบ้าน (Back Office)</span>
+        </button>
+        <button onclick="switchSystemTab('finance')" id="tab-btn-finance" class="sys-tab-btn px-5 py-3 rounded-xl font-semibold text-sm transition flex items-center gap-2 bg-slate-100 text-slate-700 hover:bg-slate-200">
+          <i data-lucide="landmark" class="w-4 h-4"></i>
+          <span>การเงิน & การควบคุมภายใน</span>
+        </button>
+        <button onclick="switchSystemTab('team')" id="tab-btn-team" class="sys-tab-btn px-5 py-3 rounded-xl font-semibold text-sm transition flex items-center gap-2 bg-slate-100 text-slate-700 hover:bg-slate-200">
+          <i data-lucide="award" class="w-4 h-4"></i>
+          <span>โครงสร้างทีม & พัฒนาบุคลากร</span>
+        </button>
+      </div>
+
+      <!-- Tab 1: Front Office -->
+      <div id="tab-panel-front" class="sys-tab-panel bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-5">
+            <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-gold-700 bg-gold-100 px-3 py-1 rounded-full">
+              เป้าหมาย: ลูกบ้านเข้าถึงง่าย รับเรื่องได้จริง และติดตามผลได้
+            </div>
+            <h3 class="text-2xl font-bold text-navy-900">ระบบงานหน้าบ้าน (Front Office Excellence)</h3>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="bg-white p-4 rounded-xl border border-slate-200/80">
+                <h4 class="font-bold text-navy-900 text-sm flex items-center gap-2">
+                  <i data-lucide="ticket" class="w-4 h-4 text-gold-600"></i> ระบบเลขที่งาน (Ticket System)
+                </h4>
+                <p class="text-xs text-slate-600 mt-1">ทุกเรื่องแจ้งซ่อมหรือร้องเรียนมีเลขอ้างอิง สถานะ ผู้รับผิดชอบ กำหนดเสร็จ และหลักฐานภาพถ่ายปิดงาน</p>
+              </div>
+              <div class="bg-white p-4 rounded-xl border border-slate-200/80">
+                <h4 class="font-bold text-navy-900 text-sm flex items-center gap-2">
+                  <i data-lucide="message-square-heart" class="w-4 h-4 text-gold-600"></i> การจัดการข้อร้องเรียน
+                </h4>
+                <p class="text-xs text-slate-600 mt-1">รับฟังอย่างตั้งใจโดยไม่โต้เถียง ตรวจสอบข้อเท็จจริง แจ้งแนวทางแก้ไข และติดตามความพึงพอใจ</p>
+              </div>
+              <div class="bg-white p-4 rounded-xl border border-slate-200/80">
+                <h4 class="font-bold text-navy-900 text-sm flex items-center gap-2">
+                  <i data-lucide="contact" class="w-4 h-4 text-gold-600"></i> บริการงานทะเบียนครบวงจร
+                </h4>
+                <p class="text-xs text-slate-600 mt-1">ดูแลฐานข้อมูลเจ้าของร่วม ผู้พักอาศัย ทะเบียนรถยนต์ บัตรผ่าน และการย้ายเข้า–ออกตามระเบียบ</p>
+              </div>
+              <div class="bg-white p-4 rounded-xl border border-slate-200/80">
+                <h4 class="font-bold text-navy-900 text-sm flex items-center gap-2">
+                  <i data-lucide="megaphone" class="w-4 h-4 text-gold-600"></i> การสื่อสารประชาสัมพันธ์
+                </h4>
+                <p class="text-xs text-slate-600 mt-1">ประกาศข่าวสาร แจ้งแผนซ่อมบำรุง แจ้งปิดระบบล่วงหน้า และแจ้งเหตุฉุกเฉินด้วยภาษาสุภาพ ชัดเจน</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-navy-900 text-white rounded-2xl p-6 sm:p-7 space-y-4">
+            <h4 class="text-lg font-bold text-gold-400 flex items-center gap-2">
+              <i data-lucide="clock" class="w-5 h-5"></i> มาตรฐานการตอบสนอง (Service Response)
+            </h4>
+            <div class="space-y-3 text-sm">
+              <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                <div class="font-semibold text-gold-300">1. เรื่องทั่วไป</div>
+                <div class="text-xs text-slate-300 mt-1">ยืนยันรับเรื่องภายในวันทำการ พร้อมแจ้งกรอบเวลาดำเนินการและติดตามผล</div>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                <div class="font-semibold text-rose-300">2. เรื่องเร่งด่วน / กระทบความปลอดภัย</div>
+                <div class="text-xs text-slate-300 mt-1">แจ้งผู้ควบคุมงานทันที เข้าตรวจสอบหน้างาน และประสานหน่วยงานฉุกเฉินที่เกี่ยวข้อง</div>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                <div class="font-semibold text-sky-300">3. เรื่องที่ต้องใช้งบประมาณหรือมติ</div>
+                <div class="text-xs text-slate-300 mt-1">รวบรวมข้อมูล วิเคราะห์ทางเลือก เปรียบเทียบราคา และนำเสนอผู้มีอำนาจอนุมัติ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Back Office -->
+      <div id="tab-panel-back" class="sys-tab-panel hidden bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200">
+        <div class="space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-gold-700 bg-gold-100 px-3 py-1 rounded-full">
+                เป้าหมาย: หน้างานทำงานต่อเนื่อง มีข้อมูลสนับสนุน และตรวจสอบย้อนหลังได้
+              </span>
+              <h3 class="text-2xl font-bold text-navy-900 mt-2">ระบบงานหลังบ้าน (Back Office System)</h3>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white p-5 rounded-xl border border-slate-200">
+              <div class="font-bold text-navy-900 mb-1">ระบบเอกสารกลาง</div>
+              <p class="text-xs text-slate-600">จัดหมวดหมู่สัญญา ใบเสนอราคา ใบสั่งซื้อ ใบแจ้งหนี้ ใบเสร็จ รายงาน และมติที่ประชุมอย่างเป็นระบบ</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-slate-200">
+              <div class="font-bold text-navy-900 mb-1">ระบบอนุมัติแยกหน้าที่</div>
+              <p class="text-xs text-slate-600">แยกผู้ขอซื้อ ผู้ตรวจสอบ ผู้อนุมัติ และผู้จ่ายเงินตามวงเงินอำนาจที่คณะกรรมการกำหนด</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-slate-200">
+              <div class="font-bold text-navy-900 mb-1">ระบบจัดซื้อและ TOR</div>
+              <p class="text-xs text-slate-600">กำหนดขอบเขตงาน เปรียบเทียบราคา ตรวจสอบคุณสมบัติผู้ขาย และบันทึกผลการคัดเลือกชัดเจน</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-slate-200">
+              <div class="font-bold text-navy-900 mb-1">ระบบทะเบียนทรัพย์สิน</div>
+              <p class="text-xs text-slate-600">จัดทำหมายเลขครุภัณฑ์ ประวัติการซ่อมบำรุง ระยะเวลารับประกัน และแผน Preventive Maintenance</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-slate-200">
+              <div class="font-bold text-navy-900 mb-1">ระบบบริหารบุคลากร</div>
+              <p class="text-xs text-slate-600">แฟ้มประวัติ สัญญาจ้าง ตารางเวร การลา การฝึกอบรม และผลการประเมินประสิทธิภาพ</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-slate-200">
+              <div class="font-bold text-navy-900 mb-1">การสำรองข้อมูล & PDPA</div>
+              <p class="text-xs text-slate-600">กำหนดสิทธิ์การเข้าถึงข้อมูล สำรองข้อมูลตามรอบ และคุ้มครองข้อมูลส่วนบุคคลของลูกบ้าน</p>
+            </div>
+          </div>
+
+          <!-- 8-Step Standard Workflow -->
+          <div class="bg-navy-900 text-white p-6 rounded-2xl">
+            <div class="text-xs font-semibold text-gold-400 uppercase tracking-wider mb-3">วงจรการทำงานมาตรฐาน 8 ขั้นตอน</div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2 text-center text-xs">
+              <div class="bg-white/10 p-3 rounded-xl"><span class="text-gold-400 font-bold block">01</span>รับเรื่อง/คำขอ</div>
+              <div class="bg-white/10 p-3 rounded-xl"><span class="text-gold-400 font-bold block">02</span>บันทึกข้อมูล</div>
+              <div class="bg-white/10 p-3 rounded-xl"><span class="text-gold-400 font-bold block">03</span>ตรวจงบ/ขอบเขต</div>
+              <div class="bg-white/10 p-3 rounded-xl"><span class="text-gold-400 font-bold block">04</span>ขออนุมัติ</div>
+              <div class="bg-white/10 p-3 rounded-xl"><span class="text-gold-400 font-bold block">05</span>ดำเนินการ</div>
+              <div class="bg-white/10 p-3 rounded-xl"><span class="text-gold-400 font-bold block">06</span>ตรวจรับงาน</div>
+              <div class="bg-white/10 p-3 rounded-xl"><span class="text-gold-400 font-bold block">07</span>บันทึกหลักฐาน</div>
+              <div class="bg-white/10 p-3 rounded-xl"><span class="text-gold-400 font-bold block">08</span>รายงาน/ปิดงาน</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Finance & Internal Control -->
+      <div id="tab-panel-finance" class="sys-tab-panel hidden bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200">
+        <div class="grid lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-7 space-y-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-gold-700 bg-gold-100 px-3 py-1 rounded-full">
+              หลักการ: โปร่งใส แยกหน้าที่ และตรวจสอบย้อนกลับได้
+            </span>
+            <h3 class="text-2xl font-bold text-navy-900">ระบบบัญชี การเงิน และการควบคุมภายใน</h3>
+            <ul class="space-y-3 text-sm text-slate-700">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-5 h-5 text-gold-600 shrink-0"></i>
+                <span>จัดทำแผนงบประมาณรายปี แยกค่าใช้จ่ายประจำ ค่าใช้จ่ายซ่อมบำรุง และงบลงทุนชัดเจน</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-5 h-5 text-gold-600 shrink-0"></i>
+                <span>จัดทำทะเบียนลูกหนี้ค่าส่วนกลาง ติดตามตามรอบ แจ้งเตือน และรายงานวิเคราะห์อายุหนี้ (Aging Report)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-5 h-5 text-gold-600 shrink-0"></i>
+                <span>ตรวจสอบรายการเดินบัญชีธนาคาร (Bank Reconciliation) และกระทบยอดเป็นประจำทุกเดือน</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-5 h-5 text-gold-600 shrink-0"></i>
+                <span>จัดทำรายงานรายรับ–รายจ่าย งบประมาณเทียบผลจริง และประมาณการกระแสเงินสดเสนอคณะกรรมการ</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-5 bg-white rounded-2xl p-6 border-2 border-gold-400/50 shadow-sm space-y-4">
+            <h4 class="font-bold text-navy-900 text-base flex items-center gap-2">
+              <i data-lucide="shield-alert" class="w-5 h-5 text-gold-600"></i> มาตรการควบคุมภายในที่สำคัญ (Internal Control)
+            </h4>
+            <div class="space-y-3 text-xs sm:text-sm text-slate-700">
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                <strong>ไม่ให้บุคคลเดียวทำรายการครบวงจร:</strong> แยกผู้ขอซื้อ ผู้ตรวจรับ และผู้อนุมัติจ่ายออกจากกันอย่างเด็ดขาด
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                <strong>บัญชีเงินฝากของนิติบุคคล 100%:</strong> สั่งจ่ายผ่านช่องทางบัญชีของนิติบุคคลตามมติและอำนาจอนุมัติ ไม่ปะปนกับบัญชีบริษัทบริหาร
+              </div>
+              <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                <strong>กำหนดวงเงินอนุมัติเป็นลายลักษณ์อักษร:</strong> ตรวจสอบเอกสารประกอบการจ่าย ใบส่งมอบงาน และหลักฐานครบถ้วนก่อนอนุมัติทุกครั้ง
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 4: Organization & HR Development -->
+      <div id="tab-panel-team" class="sys-tab-panel hidden bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200">
+        <div class="grid lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-6 space-y-4">
+            <h3 class="text-xl font-bold text-navy-900">สายการบังคับบัญชาและทีมสนับสนุนส่วนกลาง</h3>
+            <div class="space-y-2.5 text-sm">
+              <div class="bg-navy-900 text-white px-4 py-3 rounded-xl font-semibold flex justify-between items-center">
+                <span>กรรมการบริษัท / ผู้บริหารสูงสุด</span>
+                <span class="text-xs text-gold-300">กำหนดนโยบาย & มาตรฐานองค์กร</span>
+              </div>
+              <div class="bg-navy-800 text-white px-4 py-3 rounded-xl font-semibold flex justify-between items-center ml-4">
+                <span>ผู้อำนวยการฝ่ายปฏิบัติการ (Operations Director)</span>
+                <span class="text-xs text-gold-300">กำกับคุณภาพ & ทบทวน KPI</span>
+              </div>
+              <div class="bg-navy-700 text-white px-4 py-3 rounded-xl font-semibold flex justify-between items-center ml-8">
+                <span>ผู้จัดการฝ่ายปฏิบัติการ (Operations Manager)</span>
+                <span class="text-xs text-gold-300">ตรวจพื้นที่ & สนับสนุนโครงการ</span>
+              </div>
+              <div class="bg-white border-2 border-navy-700 text-navy-900 px-4 py-3 rounded-xl font-bold flex justify-between items-center ml-12">
+                <span>ผู้จัดการโครงการ / ผู้จัดการนิติบุคคล</span>
+                <span class="text-xs text-navy-600">รับผิดชอบหลักประจำโครงการ</span>
+              </div>
+              <div class="bg-white border border-slate-300 text-slate-700 px-4 py-3 rounded-xl font-medium ml-16 text-xs">
+                เจ้าหน้าที่ธุรการ • การเงิน • ช่างอาคาร • หัวหน้า รปภ. & แม่บ้าน
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-4">
+            <h3 class="text-xl font-bold text-navy-900">การคัดเลือกและพัฒนาศักยภาพบุคลากร</h3>
+            <p class="text-sm text-slate-600">
+              “คนที่เหมาะสม อยู่ในตำแหน่งที่เหมาะสม และได้รับการสนับสนุนอย่างต่อเนื่อง”
+            </p>
+            <div class="grid sm:grid-cols-2 gap-3 text-xs">
+              <div class="bg-white p-4 rounded-xl border border-slate-200">
+                <div class="font-bold text-navy-900 text-sm mb-1">การคัดกรองเข้มงวด</div>
+                สัมภาษณ์เชิงพฤติกรรม ทดสอบสถานการณ์จำลองการรับเรื่องร้องเรียน ตรวจสอบประวัติและเอกสารคุณวุฒิตามกฎหมาย
+              </div>
+              <div class="bg-white p-4 rounded-xl border border-slate-200">
+                <div class="font-bold text-navy-900 text-sm mb-1">อบรมก่อนเริ่มงาน</div>
+                ปฐมนิเทศจรรยาบรรณ กฎหมายนิติบุคคลหมู่บ้านจัดสรร/อาคารชุด การสื่อสารเชิงบวก และระบบรายงานผล
+              </div>
+              <div class="bg-white p-4 rounded-xl border border-slate-200">
+                <div class="font-bold text-navy-900 text-sm mb-1">อบรมต่อเนื่อง & ซ้อมแผน</div>
+                ทบทวนกรณีศึกษาจริง ความรู้ระบบวิศวกรรมอาคารเบื้องต้น และร่วมซ้อมแผนฉุกเฉินตามรอบ
+              </div>
+              <div class="bg-white p-4 rounded-xl border border-slate-200">
+                <div class="font-bold text-navy-900 text-sm mb-1">สนับสนุนจากสำนักงานใหญ่</div>
+                มีฝ่ายบัญชี ฝ่ายบุคคล ฝ่ายจัดซื้อ ฝ่ายวิศวกรรม และฝ่ายเทคโนโลยีสารสนเทศคอยสนับสนุนหน้างาน
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology, Data & AI Section -->
+  <section id="technology" class="py-20 navy-gradient-bg text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-5 space-y-5">
+          <span class="inline-block px-3.5 py-1 rounded-full bg-white/10 text-gold-300 font-semibold text-xs uppercase tracking-wider border border-gold-400/30">
+            14 - 15 • เทคโนโลยี ข้อมูล และ AI เพื่อการบริหาร
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold leading-tight">
+            Smart Management ขับเคลื่อนด้วยข้อมูลและ <span class="gold-gradient-text">Responsible AI</span>
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            เรานำเทคโนโลยีดิจิทัลและปัญญาประดิษฐ์ (AI) มาช่วยเพิ่มความแม่นยำและลดเวลาการทำงานเอกสาร เพื่อให้ทีมงานมีเวลาดูแลลูกบ้านและตรวจสอบพื้นที่ส่วนกลางได้มากยิ่งขึ้น โดยคำนึงถึงความปลอดภัยไซเบอร์และกฎหมาย PDPA อย่างเคร่งครัด
+          </p>
+
+          <div class="bg-white/5 border border-gold-400/30 rounded-2xl p-5 space-y-2.5">
+            <h3 class="font-bold text-gold-300 text-sm flex items-center gap-2">
+              <i data-lucide="sparkles" class="w-4 h-4"></i> หลักการใช้ AI อย่างมีความรับผิดชอบ
+            </h3>
+            <ul class="text-xs text-slate-300 space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-gold-400">•</span>
+                <span>จัดหมวดหมู่ข้อร้องเรียนและวิเคราะห์แนวโน้มงานซ่อมบำรุงจากข้อมูลที่ไม่ระบุตัวบุคคล</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gold-400">•</span>
+                <span>ช่วยร่างประกาศ รายงานการประชุม และสรุปผลการดำเนินงาน โดยเจ้าหน้าที่ตรวจทานก่อนเผยแพร่ทุกครั้ง</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gold-400">•</span>
+                <span><strong>ไม่ใช้ AI</strong> ตัดสินสิทธิของลูกบ้าน อนุมัติค่าใช้จ่าย หรือเปิดเผยข้อมูลส่วนบุคคลโดยอัตโนมัติ</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 grid sm:grid-cols-2 gap-5">
+          <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-gold-400/50 transition">
+            <i data-lucide="smartphone" class="w-8 h-8 text-gold-400 mb-3"></i>
+            <h3 class="font-bold text-lg">ระบบรับแจ้งงานออนไลน์</h3>
+            <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">ให้ลูกบ้านแจ้งปัญหา แจ้งซ่อม และติดตามสถานะความคืบหน้าได้สะดวก รวดเร็ว</p>
+          </div>
+
+          <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-gold-400/50 transition">
+            <i data-lucide="bar-chart-3" class="w-8 h-8 text-gold-400 mb-3"></i>
+            <h3 class="font-bold text-lg">Executive Dashboard & KPI</h3>
+            <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">แสดงภาพรวมงานค้าง ข้อร้องเรียน รายรับ–รายจ่าย ลูกหนี้ และตัวชี้วัด KPI รายเดือน/ไตรมาส/ปี</p>
+          </div>
+
+          <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-gold-400/50 transition">
+            <i data-lucide="bell-ring" class="w-8 h-8 text-gold-400 mb-3"></i>
+            <h3 class="font-bold text-lg">ระบบแจ้งเตือนงานซ่อมบำรุง</h3>
+            <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">แจ้งเตือนกำหนดตรวจเช็กระบบวิศวกรรมอาคาร การต่อสัญญา และงานที่ใกล้ครบกำหนด SLA</p>
+          </div>
+
+          <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-gold-400/50 transition">
+            <i data-lucide="database" class="w-8 h-8 text-gold-400 mb-3"></i>
+            <h3 class="font-bold text-lg">ฐานข้อมูลดิจิทัล & รายงาน</h3>
+            <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">จัดเก็บมติที่ประชุม ทะเบียนทรัพย์สิน ประวัติการซ่อม และรายงานประจำเดือน/ประจำปีอย่างเป็นหมวดหมู่</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-Phase Onboarding Roadmap -->
+  <section id="roadmap" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-navy-50 text-navy-700 font-semibold text-xs uppercase tracking-wider mb-3 border border-navy-100">
+          16 • แผนเริ่มต้นบริหารโครงการและการส่งมอบงาน
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-navy-900">
+          5 ขั้นตอนมาตรฐานในการรับมอบและเริ่มบริหารโครงการ
+        </h2>
+        <p class="mt-3 text-slate-600">
+          ไร้รอยต่อในการเปลี่ยนผ่านทีมบริหาร ด้วยกระบวนการสำรวจ วางระบบ และตรวจสอบเอกสารสำคัญครบถ้วน
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-5 gap-5">
+        <!-- Phase 1 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 relative card-hover">
+          <div class="text-xs font-bold text-gold-600 uppercase">ระยะที่ 1</div>
+          <h3 class="text-lg font-bold text-navy-900 mt-1 mb-2">สำรวจและประเมิน</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            ตรวจพื้นที่จริง ระบบอาคาร ทรัพย์สิน เอกสาร สัญญา งบประมาณ และรวบรวมประเด็นงานค้างทั้งหมด
+          </p>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 relative card-hover">
+          <div class="text-xs font-bold text-gold-600 uppercase">ระยะที่ 2</div>
+          <h3 class="text-lg font-bold text-navy-900 mt-1 mb-2">วางระบบปฏิบัติงาน</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            จัดตั้งทีมงาน กำหนดผังการรายงาน ช่องทางติดต่อลูกบ้าน ขั้นตอนการอนุมัติ และแผนงานประจำเดือน
+          </p>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 relative card-hover">
+          <div class="text-xs font-bold text-gold-600 uppercase">ระยะที่ 3</div>
+          <h3 class="text-lg font-bold text-navy-900 mt-1 mb-2">รับมอบงานอย่างรัดกุม</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            ตรวจรับบัญชีทรัพย์สิน กุญแจ รหัสผ่าน แบบแปลน งบการเงิน สถานะผู้รับเหมา และรายการงานค้าง
+          </p>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 relative card-hover">
+          <div class="text-xs font-bold text-gold-600 uppercase">ระยะที่ 4</div>
+          <h3 class="text-lg font-bold text-navy-900 mt-1 mb-2">เริ่มปฏิบัติงานจริง</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            ประชาสัมพันธ์แนะนำทีมงานกับลูกบ้าน เปิดช่องทางรับเรื่อง และเร่งแก้ไขแผนงานสำคัญเร่งด่วน
+          </p>
+        </div>
+
+        <!-- Phase 5 -->
+        <div class="bg-navy-900 text-white rounded-2xl p-6 border border-navy-800 relative card-hover">
+          <div class="text-xs font-bold text-gold-400 uppercase">ระยะที่ 5</div>
+          <h3 class="text-lg font-bold text-white mt-1 mb-2">ทบทวนและพัฒนา</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            ประชุมสรุปผลหลังเริ่มงานร่วมกับคณะกรรมการ กำหนดค่าเป้าหมาย KPI (Baseline) และปรับแผนให้เหมาะสม
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio / Experience Section -->
+  <section id="portfolio" class="py-20 bg-slate-100/80 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="inline-block px-3.5 py-1 rounded-full bg-white text-navy-700 font-semibold text-xs uppercase tracking-wider mb-3 border border-slate-200">
+            17 • ประสบการณ์และผลงานบริหารที่เกี่ยวข้อง
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-navy-900">
+            โครงการที่ให้ความไว้วางใจทีมงานของเรา
+          </h2>
+          <p class="mt-2 text-slate-600 text-sm sm:text-base">
+            ครอบคลุมทั้งโครงการหมู่บ้านจัดสรร (บ้านเดี่ยว ทาวน์เฮาส์ อาคารพาณิชย์) และอาคารชุดคอนโดมิเนียม
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2">
+          <button onclick="filterPortfolio('all')" id="port-btn-all" class="port-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-navy-900 text-gold-400 transition">
+            ทั้งหมด (8 โครงการ)
+          </button>
+          <button onclick="filterPortfolio('village')" id="port-btn-village" class="port-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-700 hover:bg-slate-200 border border-slate-200 transition">
+            หมู่บ้านจัดสรร / อาคารพาณิชย์
+          </button>
+          <button onclick="filterPortfolio('condo')" id="port-btn-condo" class="port-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-700 hover:bg-slate-200 border border-slate-200 transition">
+            อาคารชุด / คอนโดมิเนียม
+          </button>
+        </div>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Project 1 -->
+        <div data-category="village" class="portfolio-item bg-white rounded-2xl p-6 border border-slate-200 shadow-sm card-hover">
+          <div class="w-10 h-10 rounded-xl bg-navy-50 text-navy-800 flex items-center justify-center mb-4">
+            <i data-lucide="home" class="w-5 h-5"></i>
+          </div>
+          <span class="text-[11px] font-semibold text-gold-600 uppercase">หมู่บ้านจัดสรร</span>
+          <h3 class="text-lg font-bold text-navy-900 mt-0.5">บ้านกฤษณา ปทุมธานี</h3>
+          <p class="text-xs text-slate-500 mt-1">โครงการบ้านเดี่ยวและทาวน์เฮาส์</p>
+        </div>
+
+        <!-- Project 2 -->
+        <div data-category="village" class="portfolio-item bg-white rounded-2xl p-6 border border-slate-200 shadow-sm card-hover">
+          <div class="w-10 h-10 rounded-xl bg-navy-50 text-navy-800 flex items-center justify-center mb-4">
+            <i data-lucide="home" class="w-5 h-5"></i>
+          </div>
+          <span class="text-[11px] font-semibold text-gold-600 uppercase">หมู่บ้านจัดสรร & อาคารพาณิชย์</span>
+          <h3 class="text-lg font-bold text-navy-900 mt-0.5">บ้านกฤษณา ปทุมธานี 2</h3>
+          <p class="text-xs text-slate-500 mt-1">โครงการทาวน์เฮาส์และอาคารพาณิชย์</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div data-category="village" class="portfolio-item bg-white rounded-2xl p-6 border border-slate-200 shadow-sm card-hover">
+          <div class="w-10 h-10 rounded-xl bg-navy-50 text-navy-800 flex items-center justify-center mb-4">
+            <i data-lucide="store" class="w-5 h-5"></i>
+          </div>
+          <span class="text-[11px] font-semibold text-gold-600 uppercase">หมู่บ้านจัดสรร & อาคารพาณิชย์</span>
+          <h3 class="text-lg font-bold text-navy-900 mt-0.5">บ้านกฤษณา บางขุนเทียน</h3>
+          <p class="text-xs text-slate-500 mt-1">โครงการอาคารพาณิชย์และทาวน์เฮาส์</p>
+        </div>
+
+        <!-- Project 4 -->
+        <div data-category="village" class="portfolio-item bg-white rounded-2xl p-6 border border-slate-200 shadow-sm card-hover">
+          <div class="w-10 h-10 rounded-xl bg-navy-50 text-navy-800 flex items-center justify-center mb-4">
+            <i data-lucide="home" class="w-5 h-5"></i>
+          </div>
+          <span class="text-[11px] font-semibold text-gold-600 uppercase">หมู่บ้านจัดสรรครบวงจร</span>
+          <h3 class="text-lg font-bold text-navy-900 mt-0.5">บ้านกฤษณา ร่มเกล้า</h3>
+          <p class="text-xs text-slate-500 mt-1">บ้านเดี่ยว ทาวน์เฮาส์ และอาคารพาณิชย์</p>
+        </div>
+
+        <!-- Project 5 -->
+        <div data-category="village" class="portfolio-item bg-white rounded-2xl p-6 border border-slate-200 shadow-sm card-hover">
+          <div class="w-10 h-10 rounded-xl bg-navy-50 text-navy-800 flex items-center justify-center mb-4">
+            <i data-lucide="home" class="w-5 h-5"></i>
+          </div>
+          <span class="text-[11px] font-semibold text-gold-600 uppercase">โครงการพักอาศัย</span>
+          <h3 class="text-lg font-bold text-navy-900 mt-0.5">บ้านนราธร ร่มเกล้า</h3>
+          <p class="text-xs text-slate-500 mt-1">บริหารจัดการนิติบุคคลหมู่บ้านจัดสรร</p>
+        </div>
+
+        <!-- Project 6 -->
+        <div data-category="village" class="portfolio-item bg-white rounded-2xl p-6 border border-slate-200 shadow-sm card-hover">
+          <div class="w-10 h-10 rounded-xl bg-navy-50 text-navy-800 flex items-center justify-center mb-4">
+            <i data-lucide="gem" class="w-5 h-5"></i>
+          </div>
+          <span class="text-[11px] font-semibold text-gold-600 uppercase">โครงการพักอาศัยระดับพรีเมียม</span>
+          <h3 class="text-lg font-bold text-navy-900 mt-0.5">ณุศาศิริ พระราม 9</h3>
+          <p class="text-xs text-slate-500 mt-1">บริหารจัดการโครงการและพื้นที่ส่วนกลาง</p>
+        </div>
+
+        <!-- Project 7 -->
+        <div data-category="condo" class="portfolio-item bg-white rounded-2xl p-6 border border-slate-200 shadow-sm card-hover">
+          <div class="w-10 h-10 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-4">
+            <i data-lucide="building" class="w-5 h-5"></i>
+          </div>
+          <span class="text-[11px] font-semibold text-navy-600 uppercase">นิติบุคคลอาคารชุด</span>
+          <h3 class="text-lg font-bold text-navy-900 mt-0.5">พาร์กเอ็กโซ (Parc Exo)</h3>
+          <p class="text-xs text-slate-500 mt-1">โครงการอาคารชุดพักอาศัย</p>
+        </div>
+
+        <!-- Project 8 -->
+        <div data-category="condo" class="portfolio-item bg-white rounded-2xl p-6 border border-slate-200 shadow-sm card-hover">
+          <div class="w-10 h-10 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mb-4">
+            <i data-lucide="building" class="w-5 h-5"></i>
+          </div>
+          <span class="text-[11px] font-semibold text-navy-600 uppercase">นิติบุคคลอาคารชุด</span>
+          <h3 class="text-lg font-bold text-navy-900 mt-0.5">เฟรชคอนโดมิเนียม</h3>
+          <p class="text-xs text-slate-500 mt-1">โครงการอาคารชุดคอนโดมิเนียม</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Promise & Contact Us Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Our Promise Banner -->
+      <div class="navy-gradient-bg rounded-3xl p-8 sm:p-12 text-white mb-16 shadow-xl border border-navy-800">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5">
+            <span class="text-xs font-semibold uppercase tracking-wider text-gold-400">18 • คำมั่นสัญญาของเรา</span>
+            <h2 class="text-2xl sm:text-3xl font-bold mt-1">
+              SMART Management มุ่งมั่นดูแลทุกพื้นที่ด้วยความใส่ใจ
+            </h2>
+            <p class="text-sm text-slate-300 mt-3 leading-relaxed">
+              เราเชื่อว่าการบริหารนิติบุคคลที่ดีไม่ได้จบเพียงการดูแลอาคารหรือจัดการเอกสาร แต่คือการสร้างระบบที่ทำให้คณะกรรมการมั่นใจ ลูกบ้านได้รับบริการที่ดี และทรัพย์สินส่วนกลางได้รับการดูแลอย่างต่อเนื่อง
+            </p>
+          </div>
+          <div class="lg:col-span-7 grid sm:grid-cols-2 gap-4 text-sm">
+            <div class="bg-white/10 border border-white/15 p-4 rounded-2xl flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-gold-400 shrink-0 mt-0.5"></i>
+              <span>ทำงานตามขอบเขตสัญญาและมติของนิติบุคคลอย่างเคร่งครัด</span>
+            </div>
+            <div class="bg-white/10 border border-white/15 p-4 rounded-2xl flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-gold-400 shrink-0 mt-0.5"></i>
+              <span>สื่อสารตรงไปตรงมา รายงานข้อมูลตามข้อเท็จจริงครบถ้วน</span>
+            </div>
+            <div class="bg-white/10 border border-white/15 p-4 rounded-2xl flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-gold-400 shrink-0 mt-0.5"></i>
+              <span>ให้บริการด้วยความสุภาพ เป็นธรรม และเคารพสิทธิของทุกคน</span>
+            </div>
+            <div class="bg-white/10 border border-white/15 p-4 rounded-2xl flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-gold-400 shrink-0 mt-0.5"></i>
+              <span>ติดตามงานจนได้ข้อสรุป พร้อมพัฒนาคุณภาพอย่างต่อเนื่อง</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Details & Proposal Form -->
+      <div class="grid lg:grid-cols-12 gap-10">
+        <!-- Left: Address & Map -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-gold-600">ติดต่อสำนักงานใหญ่</span>
+            <h3 class="text-2xl font-bold text-navy-900 mt-1">
+              บริษัท สมาร์ท แมเนจเม้นท์ แอนด์ คอนซัลท์ จำกัด
+            </h3>
+            <p class="text-xs font-semibold text-slate-500 tracking-wide">
+              SMART MANAGEMENT AND CONSULT COMPANY LIMITED
+            </p>
+          </div>
+
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+              <div class="p-2.5 rounded-xl bg-navy-900 text-gold-400 shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="font-bold text-navy-900">ที่ตั้งสำนักงานแห่งใหญ่</div>
+                <p class="text-slate-700 mt-0.5">4 ซอยอ่อนนุช 73 แขวงประเวศ เขตประเวศ กรุงเทพมหานคร 10250</p>
+                <p class="text-xs text-slate-500 mt-0.5">4 On Nut 73 Alley, Prawet Subdistrict, Prawet District, Bangkok 10250</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+              <div class="p-2.5 rounded-xl bg-navy-900 text-gold-400 shrink-0">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="font-bold text-navy-900">อีเมลและเว็บไซต์</div>
+                <p class="text-slate-700 mt-0.5">
+                  อีเมล: <a href="mailto:smartmc2009@gmail.com" class="text-navy-700 font-semibold underline hover:text-gold-600">smartmc2009@gmail.com</a>
+                </p>
+                <p class="text-slate-700">
+                  เว็บไซต์: <span class="font-medium">www.smartmanagement.co.th</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Map -->
+          <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm h-56 bg-slate-100">
+            <iframe
+              title="แผนที่ บริษัท สมาร์ท แมเนจเม้นท์ แอนด์ คอนซัลท์ จำกัด ซอยอ่อนนุช 73"
+              src="https://www.google.com/maps?q=ซอยอ่อนนุช+73+แขวงประเวศ+เขตประเวศ+กรุงเทพมหานคร+10250&output=embed"
+              class="w-full h-full border-0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Right: Request Proposal Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-slate-50 rounded-3xl p-7 sm:p-9 border border-slate-200 shadow-sm">
+            <h3 class="text-2xl font-bold text-navy-900">ขอใบเสนอราคา / นัดหมายนำเสนอคณะกรรมการ</h3>
+            <p class="text-sm text-slate-600 mt-1 mb-6">
+              กรอกข้อมูลโครงการของท่านเพื่อให้ทีมบริหารจัดเตรียมแนวทางการดูแลและขอบเขตงาน (Scope of Work) ที่เหมาะสมกับโครงการ
+            </p>
+
+            <form id="proposal-form" class="space-y-4" onsubmit="handleProposalSubmit(event)">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-navy-900 mb-1.5">ชื่อโครงการ (หมู่บ้านจัดสรร / อาคารชุด) *</label>
+                  <input type="text" id="proj-name" required placeholder="เช่น นิติบุคคลหมู่บ้าน... / อาคารชุด..." class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:border-navy-800" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-navy-900 mb-1.5">ประเภทโครงการ *</label>
+                  <select id="proj-type" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:border-navy-800">
+                    <option value="นิติบุคคลหมู่บ้านจัดสรร">นิติบุคคลหมู่บ้านจัดสรร</option>
+                    <option value="นิติบุคคลอาคารชุด (คอนโดมิเนียม)">นิติบุคคลอาคารชุด (คอนโดมิเนียม)</option>
+                    <option value="อาคารพาณิชย์ / โครงการมิกซ์ยูส">อาคารพาณิชย์ / โครงการมิกซ์ยูส</option>
+                    <option value="อื่นๆ">อื่นๆ (ต้องการที่ปรึกษาจัดตั้งนิติบุคคล)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-navy-900 mb-1.5">ชื่อผู้ติดต่อ / ตำแหน่งในคณะกรรมการ *</label>
+                  <input type="text" id="contact-person" required placeholder="ชื่อ - นามสกุล" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:border-navy-800" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-navy-900 mb-1.5">เบอร์โทรศัพท์ติดต่อ *</label>
+                  <input type="tel" id="contact-phone" required placeholder="08X-XXX-XXXX" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:border-navy-800" />
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-navy-900 mb-1.5">จำนวนยูนิตโดยประมาณ</label>
+                  <input type="text" id="proj-units" placeholder="เช่น 250 หลัง / 400 ยูนิต" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:border-navy-800" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-navy-900 mb-1.5">ทำเลที่ตั้งโครงการ (เขต/จังหวัด)</label>
+                  <input type="text" id="proj-location" placeholder="เช่น ประเวศ กรุงเทพฯ / ปทุมธานี" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:border-navy-800" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-navy-900 mb-1.5">รายละเอียดเพิ่มเติม หรือประเด็นที่ต้องการให้เน้นเป็นพิเศษ</label>
+                <textarea id="proj-notes" rows="3" placeholder="ระบุความต้องการ เช่น นัดสำรวจพื้นที่, ขอใบเสนอราคาบริหารนิติบุคคล, ระบบบัญชี, งานวิศวกรรม ฯลฯ" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:border-navy-800"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-4 rounded-xl gold-gradient-bg text-navy-950 font-bold text-sm sm:text-base shadow-md hover:brightness-105 transition flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>ส่งข้อมูลขอใบเสนอราคาผ่านอีเมล (smartmc2009@gmail.com)</span>
+              </button>
+
+              <div id="form-feedback" class="hidden p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy-950 text-slate-400 py-12 border-t border-navy-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-navy-800">
+        <div class="flex items-center gap-4">
+          <img src="assets/logo.png" alt="SMART Management Logo" class="w-14 h-14 object-contain bg-white rounded-full p-0.5" />
+          <div>
+            <div class="text-white font-bold text-lg">บริษัท สมาร์ท แมเนจเม้นท์ แอนด์ คอนซัลท์ จำกัด</div>
+            <div class="text-gold-400 text-xs font-medium tracking-wider">SMART MANAGEMENT AND CONSULT COMPANY LIMITED</div>
+            <div class="text-xs text-slate-400 mt-1">4 ซอยอ่อนนุช 73 แขวงประเวศ เขตประเวศ กรุงเทพมหานคร 10250</div>
+          </div>
+        </div>
+        <div class="text-left md:text-right">
+          <div class="text-gold-300 font-semibold text-sm">“มุ่งมั่น สร้างสรรค์ สังคมน่าอยู่”</div>
+          <div class="text-xs text-slate-400 mt-1">เลขทะเบียนนิติบุคคล: 0105552126717</div>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+        <div>
+          © 2026 บริษัท สมาร์ท แมเนจเม้นท์ แอนด์ คอนซัลท์ จำกัด (SMART Management and Consult Co., Ltd.). สงวนลิขสิทธิ์.
+        </div>
+        <div>
+          เอกสารและเว็บไซต์นี้จัดทำเพื่อแนะนำองค์กร รายละเอียดการให้บริการจริงยึดตามสัญญาและขอบเขตงานของแต่ละโครงการ
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Scripts -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // Operating System Tabs Switcher
+    function switchSystemTab(tabId) {
+      const tabs = ['front', 'back', 'finance', 'team'];
+      tabs.forEach(t => {
+        const panel = document.getElementById('tab-panel-' + t);
+        const btn = document.getElementById('tab-btn-' + t);
+        if (t === tabId) {
+          panel.classList.remove('hidden');
+          btn.className = 'sys-tab-btn px-5 py-3 rounded-xl font-semibold text-sm transition flex items-center gap-2 bg-navy-900 text-gold-400 shadow-md';
+        } else {
+          panel.classList.add('hidden');
+          btn.className = 'sys-tab-btn px-5 py-3 rounded-xl font-semibold text-sm transition flex items-center gap-2 bg-slate-100 text-slate-700 hover:bg-slate-200';
+        }
+      });
+    }
+
+    // Portfolio Filter
+    function filterPortfolio(category) {
+      const items = document.querySelectorAll('.portfolio-item');
+      const buttons = {
+        all: document.getElementById('port-btn-all'),
+        village: document.getElementById('port-btn-village'),
+        condo: document.getElementById('port-btn-condo'),
+      };
+
+      Object.keys(buttons).forEach(key => {
+        if (key === category) {
+          buttons[key].className = 'port-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-navy-900 text-gold-400 transition';
+        } else {
+          buttons[key].className = 'port-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-700 hover:bg-slate-200 border border-slate-200 transition';
+        }
+      });
+
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    }
+
+    // Proposal Form Handler (opens mailto with prefilled structured details & shows confirmation)
+    function handleProposalSubmit(e) {
+      e.preventDefault();
+      const projName = document.getElementById('proj-name').value.trim();
+      const projType = document.getElementById('proj-type').value;
+      const person = document.getElementById('contact-person').value.trim();
+      const phone = document.getElementById('contact-phone').value.trim();
+      const units = document.getElementById('proj-units').value.trim() || '-';
+      const location = document.getElementById('proj-location').value.trim() || '-';
+      const notes = document.getElementById('proj-notes').value.trim() || '-';
+
+      const subject = encodeURIComponent(`ขอใบเสนอราคาบริหารนิติบุคคล: ${projName}`);
+      const body = encodeURIComponent(
+        `เรียน ฝ่ายบริหาร บริษัท สมาร์ท แมเนจเม้นท์ แอนด์ คอนซัลท์ จำกัด\n\n` +
+        `มีความประสงค์ขอใบเสนอราคา / นัดหมายนำเสนอแนวทางการบริหารจัดการนิติบุคคล ดังรายละเอียดต่อไปนี้:\n` +
+        `• ชื่อโครงการ: ${projName}\n` +
+        `• ประเภทโครงการ: ${projType}\n` +
+        `• จำนวนยูนิต: ${units}\n` +
+        `• ทำเลที่ตั้ง: ${location}\n` +
+        `• ชื่อผู้ติดต่อ: ${person}\n` +
+        `• เบอร์โทรศัพท์: ${phone}\n` +
+        `• รายละเอียดเพิ่มเติม: ${notes}\n`
+      );
+
+      const feedback = document.getElementById('form-feedback');
+      feedback.innerHTML = `<strong>เตรียมข้อมูลเรียบร้อยแล้ว!</strong> ระบบกำลังเปิดโปรแกรมอีเมลเพื่อส่งไปยัง <strong>smartmc2009@gmail.com</strong> หรือท่านสามารถคัดลอกข้อมูลติดต่อทีมงานได้ทันที`;
+      feedback.classList.remove('hidden');
+
+      window.location.href = `mailto:smartmc2009@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>
+
